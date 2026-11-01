@@ -18,3 +18,9 @@ window.SITE = {
   skills: ["Social Media Marketing", "Content Strategy", "Creative Strategy", "Meta Business Suite", "Meta Ads", "Canva", "Audience Research", "Trend Analysis", "SEO", "Content Creation", "Google Analytics 4", "Performance Analysis"],
   learning: ["Google Analytics 4"] // shown with a 'learning' tag until proficiency is established
 };
+
+// CAMPAIGN LINKS: one list per project number. Replace slot(3) with your real links, e.g.
+// "01": [{t:"Instagram post", u:"https://www.instagram.com/p/XXXX/"}, {t:"Reel", u:"https://..."}]
+// Entries without an http(s) URL show as "add URL" notes, never as dead buttons.
+const slot = n => Array.from({ length: n }, (_, i) => ({ t: "Campaign link " + (i + 1), u: "" }));
+SITE.campaignLinks = { "01": slot(3), "02": slot(3), "03": slot(3), "04": slot(3), "05": slot(2), "06": slot(2) };
