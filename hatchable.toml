@@ -1,0 +1,5 @@
+# Hatchable project manifest. This file marks the folder as a
+# Hatchable project and declares the services it uses.
+# Reference: https://hatchable.com/docs/developers/config
+name = "Smriti Raghuvanshi — Portfolio"
+description = "Experimental editorial portfolio for Smriti Raghuvanshi, Digital Marketing & Social Media professional."
