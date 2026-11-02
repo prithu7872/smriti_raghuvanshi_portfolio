@@ -33,4 +33,4 @@ SITE.campaignPages = [
 ];
 const cp = i => SITE.campaignPages[i];
 // Mapping is an assumption: [EDIT] move pages between projects if needed. Empty list = no campaign-links block.
-SITE.campaignLinks = { "01": [cp(0), cp(1), cp(2), cp(3), cp(4)], "02": [], "03": [cp(5)], "04": [], "05": [], "06": [] };
+SITE.campaignLinks = { "01": [cp(0), cp(1), cp(2), cp(3), cp(4)], "02": [cp(2)], "03": [cp(5)], "04": [], "05": [], "06": [] };
