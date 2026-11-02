@@ -23,4 +23,14 @@ window.SITE = {
 // "01": [{t:"Instagram post", u:"https://www.instagram.com/p/XXXX/"}, {t:"Reel", u:"https://..."}]
 // Entries without an http(s) URL show as "add URL" notes, never as dead buttons.
 const slot = n => Array.from({ length: n }, (_, i) => ({ t: "Campaign link " + (i + 1), u: "" }));
-SITE.campaignLinks = { "01": slot(3), "02": slot(3), "03": slot(3), "04": slot(3), "05": slot(2), "06": slot(2) };
+SITE.campaignPages = [
+  { t: "A Simple Yes", u: "campaigns/a-simple-yes.html" },
+  { t: "One Destination", u: "campaigns/one-destination.html" },
+  { t: "Into the Verto Verse", u: "campaigns/into-the-verto-verse.html" },
+  { t: "Induction Was Never This Fun", u: "campaigns/induction-was-never-this-fun.html" },
+  { t: "Every Colour", u: "campaigns/every-colour.html" },
+  { t: "The 25 Effect", u: "campaigns/the-25-effect.html" }
+];
+const cp = i => SITE.campaignPages[i];
+// Mapping is an assumption: [EDIT] move pages between projects if needed. Empty list = no campaign-links block.
+SITE.campaignLinks = { "01": [cp(0), cp(1), cp(2), cp(3), cp(4)], "02": [], "03": [cp(5)], "04": [], "05": [], "06": [] };
