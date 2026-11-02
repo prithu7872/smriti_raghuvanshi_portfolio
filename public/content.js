@@ -11,7 +11,7 @@ window.SITE = {
     { no: "01", title: "LPU Official Social Media Campaigns", cat: "Social Media", img: "img/p1.jpg", obj: "Encourage students to join LPU's social community and showcase their talents.", tags: ["Campaign concept", "Creative direction", "Promotional creatives"] },
     { no: "02", title: "LPU Through My Lens", cat: "Social Media", img: "img/p2.jpg", obj: "Celebrate the university through students' photography and authentic campus perspectives.", tags: ["Visual identity", "Hashtag direction", "Storytelling"] },
     { no: "03", title: "LPU 25 Years: Then & Now", cat: "Anniversary Campaign", img: "img/p3.jpg", obj: "Communicate the university's journey through nostalgic and contemporary visual storytelling.", tags: ["Then-and-now narrative", "9:16 creative direction"] },
-    { no: "04", title: "Mozo Hunt Digital Marketing", cat: "Marketing & Advertising", img: "img/p4.jpg", obj: E + "Add objective.", tags: ["Canva designs", "Meta campaigns", "Meta Business Suite", "Targeted advertising"] },
+    { no: "04", title: "Mozo Hunt Digital Marketing", cat: "Marketing & Advertising", img: "img/p4.jpg", obj: "", tags: ["Canva designs", "Meta campaigns", "Meta Business Suite", "Targeted advertising"] },
     { no: "05", title: "Dolphive HR Management App", cat: "HR & Product", img: "img/p5.jpg", obj: E + "Add your role, objective and what you contributed.", tags: [E + "tags"] },
     { no: "06", title: "Psychometric Testing & Student Behavioural Assessment", cat: "Research", img: "img/p6.jpg", obj: E + "Add your role, objective and method.", tags: [E + "tags"] }
   ],
@@ -33,4 +33,4 @@ SITE.campaignPages = [
 ];
 const cp = i => SITE.campaignPages[i];
 // Mapping is an assumption: [EDIT] move pages between projects if needed. Empty list = no campaign-links block.
-SITE.campaignLinks = { "01": [cp(0), cp(1), cp(3), cp(4)], "02": [cp(2)], "03": [cp(5)], "04": [], "05": [], "06": [] };
+SITE.campaignLinks = { "01": [cp(0), cp(1), cp(3), cp(4)], "02": [cp(2)], "03": [cp(5)], "04": [{ t: "Summer Internship Report 2025", u: "internship-report-2025.html" }], "05": [], "06": [] };
